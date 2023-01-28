@@ -7,13 +7,13 @@ while True:
 
     if not fishing:
         print('ei kalasteta')
-        smallsurvari = pyautogui.locateOnScreen('./images/smallsurvari.png')
-        emptyhook = pyautogui.locateOnScreen('./images/emptyhook.png',)
-        ritsa = pyautogui.locateOnScreen('./images/ritsa.png')
-        holmes = pyautogui.locateOnScreen('./images/holmes.png')
-        survi = pyautogui.locateOnScreen('./images/survi.png')
-        rod = pyautogui.locateOnScreen('./images/rod.png')
-        out = pyautogui.locateOnScreen('./images/out.png')
+        smallsurvari = pyautogui.locateOnScreen('./images/smallsurvari.png', confidence=0.9)
+        emptyhook = pyautogui.locateOnScreen('./images/emptyhook.png', confidence=0.9)
+        ritsa = pyautogui.locateOnScreen('./images/ritsa.png', confidence=0.6)
+        holmes = pyautogui.locateOnScreen('./images/holmes.png', confidence=0.6)
+        survi = pyautogui.locateOnScreen('./images/survi.png', confidence=0.9)
+        rod = pyautogui.locateOnScreen('./images/rod.png', confidence=0.6)
+        out = pyautogui.locateOnScreen('./images/out.png', confidence=0.6)
 
         if survi or smallsurvari:
                 print('mato paikallaan, pilkitään')
